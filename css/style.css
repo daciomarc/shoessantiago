@@ -46,6 +46,7 @@ header nav ul {
 
 .banner img {
     width: 100%;
+    margin: 5px;
 }
 
 .banner--text {

@@ -5,6 +5,11 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-decoration: none;
 }
+body{background: rgb(34,193,195);
+    background: -moz-linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#22c1c3",endColorstr="#fdbb2d",GradientType=1);}
 
 /* Header */
 header {
@@ -30,7 +35,12 @@ header nav ul {
 }
 
 /* Banner Clases */
-.banner {
+.banner {background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
     padding: 20px;
 }
 
@@ -54,6 +64,8 @@ header nav ul {
     display: flex;
     overflow-x: auto;
     justify-content: space-around;
+
+    
 }
 
 .modelos h2 {
@@ -75,16 +87,24 @@ header nav ul {
 
 }
 
+.card--modelos:hover{transition: all 0.8s ease;
+    transform: scale(1.1,1.1)
+
+}
+
 .card--modelos img {
     width: 100%;
     min-width: 150px;
-}
+    }
 
 .card--modelos a {
     border: 2px solid black;
     border-radius: 5px;
     padding: 4px 8px;
     background-color: rgb(62, 202, 193);
+    transition: all 0.8s ease;
+    transform: scale(1.1,1.1);
+
 
 }
 
@@ -98,7 +118,8 @@ header nav ul {
 
 .datos--zapatilla {
     text-align: center;
-    color: green;
+    color: black;
+    
 }
 
 /* Media Queries */
@@ -173,6 +194,7 @@ header nav ul {
 }
 
 .redes-container i {
+    @keyframes 0.5s animation: 3s infinite alternate slidein;
     font-size: 3rem;
     padding: 10px;
     display: flex;

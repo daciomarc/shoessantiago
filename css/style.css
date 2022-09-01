@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+}
+
+/* Header */
+header {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 10px;
+
+}
+
+header h1 {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    font-size: 1.5rem;
+}
+
+/* Banner Clases */
+.banner {
+    padding: 20px;
+}
+
+.banner img {
+    width: 100%;
+}
+
+.banner--text {
+    height: 30vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10%;
+    margin: 10%;
+}
+
+/* Seccion Modelos */
+.container--modelos {
+    padding: 20px 10px;
+    display: flex;
+    overflow-x: auto;
+    justify-content: space-around;
+}
+
+.modelos h2 {
+    text-align: center;
+    background-color: lightsalmon;
+    padding: 20px;
+}
+
+.card--modelos {
+    border: 2px solid black;
+    border-radius: 20px;
+    width: 200px;
+    padding: 15px;
+    margin: 0px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.card--modelos img {
+    width: 100%;
+    min-width: 150px;
+}
+
+.card--modelos a {
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 4px 8px;
+    background-color: rgb(62, 202, 193);
+
+}
+
+/* Seccion datos Zapatillas */
+.datos--zapatilla h2 {
+    text-align: center;
+    background-color: darkorange;
+    color: black;
+    padding: 10px
+}
+
+.datos--zapatilla {
+    text-align: center;
+    color: green;
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+
+    /* ----------GRID MAIN------- */
+
+    main {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr) 20vw;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas:
+            "banner banner banner"
+            "modelos modelos redes"
+            "datos--zapatilla datos--zapatilla redes";
+    }
+
+
+    .modelos {
+        grid-area: modelos;
+    }
+
+    .redesSociales {
+        grid-area: redes;
+    }
+
+    .datos--zapatilla {
+        grid-area: datos--zapatilla;
+    }
+
+
+    /* Header */
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header nav {
+        width: 100%;
+    }
+
+    /* Banners */
+    .banner {
+        display: flex;
+        grid-area: banner;
+    }
+
+    .banner img {
+        width: 50%;
+        align-items: flex-end;
+
+    }
+
+    .banner--text {
+        text-align: start;
+    }
+}
+
+
+
+
+/* ---------FOOTER REDES---------- */
+.redesSociales h2 {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+}
+
+.redes-container i {
+    font-size: 3rem;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    text-decoration: none;
+}
+
+.redes-container {
+    display: flex;
+    justify-content: space-around;
+}

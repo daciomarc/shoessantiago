@@ -6,7 +6,7 @@ header {
   padding: 20px;
   margin: 10px; }
   color:black header lihover {
-    transition: all 0.8s ease;
+    transition: all 0.5s ease;
     transform: scale(1.2, 1.2); }
   header h1 {
     text-align: center;

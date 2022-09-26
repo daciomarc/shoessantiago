@@ -1,0 +1,23 @@
+.redesSociales h2 {
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+}
+
+.redes-container i {
+  font-size: 3rem;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  text-decoration: none;
+}
+
+.redes-container {
+  display: flex;
+  justify-content: space-around;
+}/*# sourceMappingURL=footer.css.map */

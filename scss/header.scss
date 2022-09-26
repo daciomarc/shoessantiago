@@ -5,16 +5,16 @@ header {
     flex-direction: column;
     padding: 20px;
     margin: 10px;
+
+    li {
+        color:dimgray &hover {
+            transition: all 0.5s ease;
+            transform: scale(1.2, 1.2);
+        }
+    }
     
-li {
-    color:black &hover{transition: all 0.5s ease;
-        transform: scale(1.2, 1.2);
-          }
-}
     h1 {
         text-align: center;
         font-size: 1.5rem;
-
-        
     }
 }

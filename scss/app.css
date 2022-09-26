@@ -4,13 +4,16 @@ header {
   display: flex;
   flex-direction: column;
   padding: 20px;
-  margin: 10px; }
-  color:black header li:hover {
-    transition: all 0.5s ease;
-    transform: scale(1.2, 1.2); }
-  header h1 {
-    text-align: center;
-    font-size: 1.5rem; }
+  margin: 10px;
+}
+color:black header lihover {
+  transition: all 0.5s ease;
+  transform: scale(1.2, 1.2);
+}
+header h1 {
+  text-align: center;
+  font-size: 1.5rem;
+}
 
 .redesSociales h2 {
   background-color: black;
@@ -19,7 +22,8 @@ header {
   flex-direction: column;
   padding: 20px;
   margin: 10px;
-  text-align: center; }
+  text-align: center;
+}
 
 .redes-container i {
   font-size: 3rem;
@@ -27,8 +31,10 @@ header {
   display: flex;
   justify-content: center;
   flex-direction: row;
-  text-decoration: none; }
+  text-decoration: none;
+}
 
 .redes-container {
   display: flex;
-  justify-content: space-around; }
+  justify-content: space-around;
+}/*# sourceMappingURL=app.css.map */

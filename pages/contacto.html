@@ -9,14 +9,14 @@
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/style.css">
-    
-    
+
+
     <title>Shoes Santiago</title>
 </head>
 
 <body>
-    
-      <header>
+
+    <header>
         <h1>Shoes Santiago</h1>
 
         <nav class="navbar navbar-expand-lg bg-light">
@@ -47,11 +47,48 @@
                 </div>
             </div>
         </nav>
-      </header>
-    <main>
+    </header>
 
-        
-    </main>
+    <div class="formulario"
+            <!------------------Formulario------------------>
+            <h3>Formulario de contacto</h3>
+            <form>
+                <br><label for="nombrecompleto">Nombre y Apellido</label>
+                <input type="text" id="nombrecompleto" placeholder="Tu nombre aqui, por favor" required>
+                <br>
+                <br><label for="emailcompleto">Email</label>
+                <input type="email" name="" id="emailcompleto" placeholder="ejemplo@mail.com" required>
+                <br>
+
+                <br><label for="numerotelefono">Telefono</label>
+                <input type="number" name="" id="numerotelefono" placeholder="Tu numero de telefono aqui, por favor"
+                    required>
+                <br>
+
+                <br><label for="seleccion-region">Region de Argentina</label>
+                <select name="" id="seleccion-region">
+                    <option value="">Norte del pais</option>
+                    <option value="">Centro del pais</option>
+                    <option value="">Sur del pais</option>
+                </select>
+                <br>
+
+                <label type="checkbox" name="Clic aqui para confirmar region" id="">
+
+                    <div>
+                        <br> <label>Dejanos tu comentario!</label><br>
+
+                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                    </div>
+
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Reiniciar formulario">
+
+            </form>
+            <!-- Fin formulario -->
+        </div>
+
+   
     <!-- FOOTER -->
     <hr>
     <footer id="pie">
@@ -74,38 +111,3 @@
 </body>
 
 </html>
-    <!-- Formulario -->
-    <h2>Formulario de contacto</h2>
-    <form>
-        <br><label for="nombrecompleto">Nombre y Apellido</label>
-        <input type="text" id="nombrecompleto" placeholder="Tu nombre aqui, por favor" required>
-        <br>
-        <br><label for="emailcompleto">Email</label>
-        <input type="email" name="" id="emailcompleto" placeholder="ejemplo@mail.com" required>
-        <br>
-
-        <br><label for="numerotelefono">Telefono</label>
-        <input type="number" name="" id="numerotelefono" placeholder="Tu numero de telefono aqui, por favor" required>
-        <br>
-
-        <br><label for="seleccion-region">Region de Argentina</label>
-        <select name="" id="seleccion-region">
-            <option value="">Norte del pais</option>
-            <option value="">Centro del pais</option>
-            <option value="">Sur del pais</option>
-        </select>
-        <br>
-
-        <label type="checkbox" name="Clic aqui para confirmar region" id="">
-
-            <div>
-                <br> <label>Dejanos tu comentario!</label><br>
-
-                <textarea name="" id="" cols="30" rows="10"></textarea>
-            </div>
-
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Reiniciar formulario">
-
-    </form>
-    <!-- Fin formulario -->

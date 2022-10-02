@@ -1,0 +1,13 @@
+.texto--nosotros {
+    border: 3px solid black;
+    border-radius: 15px;
+    width: 90vw;
+    padding: 2px;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    height: fit-content;
+    text-align: center;
+    
+}

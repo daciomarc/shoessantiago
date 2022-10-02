@@ -1,3 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500&family=Roboto:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500&family=Roboto:wght@500&display=swap");
 header {
   background-color: black;
   color: white;
@@ -6,7 +10,7 @@ header {
   padding: 20px;
   margin: 10px;
 }
- header li:hover {
+color:dimgray header lihover {
   transition: all 0.5s ease;
   transform: scale(1.2, 1.2);
 }
@@ -37,4 +41,194 @@ header h1 {
 .redes-container {
   display: flex;
   justify-content: space-around;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  background-color: #e6e6f3;
+  opacity: 0.9;
+  background-image: radial-gradient(#272424 0.55px, #e6e6f3 0.55px);
+  background-size: 11px 11px;
+  font-family: "Inter Tight" "Roboto", "Open Sans", sans-serif;
+}
+
+h1 {
+  font-family: "Inter Tight", sans-serif;
+}
+
+h2 {
+  font-family: "Inter Tight", sans-serif;
+}
+
+h3 {
+  font-family: "Roboto", sans-serif;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+}
+
+/* Banner Clases */
+.banner {
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 20px;
+}
+
+.banner--img {
+  width: 100vw;
+  margin: 5px;
+}
+
+.banner--text {
+  height: 30vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10%;
+  margin: 10%;
+}
+
+/* Seccion Modelos */
+.container--modelos {
+  padding: 20px 10px;
+  display: flex;
+  overflow-x: auto;
+  justify-content: space-around;
+}
+
+.modelos h2 {
+  text-align: center;
+  background-color: lightsalmon;
+  padding: 20px;
+  font-weight: bolder;
+}
+
+.card--modelos {
+  border: 3px solid black;
+  border-radius: 15px;
+  width: 200px;
+  padding: 5px;
+  margin: 0px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.card--modelos img {
+  width: 100%;
+  min-width: 150px;
+}
+
+.card--modelos img:hover {
+  transition: all 0.8s ease;
+  transform: scale(1.2, 1.2);
+}
+
+.card--modelos a {
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 4px 8px;
+  background-color: rgb(62, 202, 193);
+  transition: all 0.8s ease;
+  transform: scale(1.1, 1.1);
+}
+
+/* Seccion datos Zapatillas */
+.datos--zapatilla h2 {
+  text-align: center;
+  background-color: darkorange;
+  color: black;
+  padding: 10px;
+}
+
+.datos--zapatilla {
+  text-align: center;
+  color: black;
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+  /* ----------GRID MAIN------- */
+  main .main-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) 20vw;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "banner banner banner" "modelos modelos modelos" "datos--zapatilla datos--zapatilla datos--zapatilla";
+  }
+  .modelos {
+    grid-area: modelos;
+  }
+  .redesSociales {
+    grid-area: redes;
+  }
+  .datos--zapatilla {
+    grid-area: datos--zapatilla;
+  }
+  /* Header */
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header nav {
+    width: 100%;
+  }
+  /* Banners */
+  .banner {
+    display: flex;
+    grid-area: banner;
+  }
+  .banner img {
+    width: 50%;
+    align-items: flex-end;
+  }
+  .banner--text {
+    text-align: start;
+  }
+}
+/* ---------------Formulario-------------- */
+.formulario {
+  border: 3px solid grey;
+  border-radius: 15px;
+  width: 100%;
+  justify-content: center;
+  font-family: inherit;
+  align-items: center;
+  position: relative;
+  text-align: center;
+}
+
+.formulario h3 {
+  justify-content: center;
+}
+
+.texto--nosotros {
+  border: 3px solid black;
+  border-radius: 15px;
+  width: 250px;
+  padding: 5px;
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  text-align: center;
 }/*# sourceMappingURL=app.css.map */
